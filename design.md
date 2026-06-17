@@ -23,6 +23,7 @@ Its goals are:
 - Read [docs/audit.md](docs/audit.md) for the DS audit method.
 - Read [docs/heuristic.md](docs/heuristic.md) for the UX review method.
 - Read [docs/boost.md](docs/boost.md) for the redesign method.
+- Read [docs/designer-qa.md](docs/designer-qa.md) for live question answering over Figma sources.
 
 ## Which File To Use
 
@@ -32,6 +33,7 @@ Use this routing logic:
 - If the task is "review a product flow or screen UX", start with [docs/heuristic.md](docs/heuristic.md) and [skills/heuristic-skill.md](skills/heuristic-skill.md).
 - If the task is "redesign or improve a screen", start with [docs/boost.md](docs/boost.md) and [skills/boost-skill.md](skills/boost-skill.md).
 - If the task is "add a new audit item for a specific DS area", use the matching audit domain skill in `skills/`.
+- If the task is "answer a designer question about how something was designed, criticized, improved, or used", start with [docs/designer-qa.md](docs/designer-qa.md) and [skills/designer-qa-skill.md](skills/designer-qa-skill.md).
 
 ## Core Rule
 
@@ -88,3 +90,23 @@ This repository is not a generic design playbook.
 
 It is a project-specific operating system for the Bank Albilad workstream.
 
+## Live Retrieval Philosophy
+
+This repository should not be inflated with one markdown file per component.
+
+Instead, it should teach an agent how to answer questions by reading live Figma evidence in the right order.
+
+The repository provides:
+
+- routing logic
+- source priority
+- answer structure
+- continuity rules
+
+Figma provides:
+
+- the current source of truth for original DS implementation
+- the audit evidence
+- the heuristic evidence
+- the boost kit implementation
+- the boost flow usage examples
